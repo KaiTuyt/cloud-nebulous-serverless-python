@@ -1,4 +1,6 @@
 <!doctype html>
+const engAlpha = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+
 <style>
 .button {
   border: none;
@@ -39,7 +41,7 @@
 <h4>Enter <i>{{ orig['lc'][1] }}</i> text to translate to <i>{{ trans['lc'][1] }}</i>:</h4>
 <form method="POST"><input name="text"><input type="submit"></form>
 
-<p>Testing whether or not this shows up:</p>
+<p>Your letter is: </p>
 <button class="button button1">Test</button>
 <form>What position is the above letter in the alphabet? <input type="text" id="position"><input type="button" onclick="show()" value="Show Letter"></form>
 <p>You typed: <strong><span id="display"></strong></p>
