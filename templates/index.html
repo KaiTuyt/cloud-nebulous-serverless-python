@@ -18,8 +18,15 @@
   color: black; 
   border: 2px solid #4CAF50;
 }
-
 </style>
+
+<script type="text/JavaScript">
+	function show(){
+		var position = document.getElementById("position").value;
+		display.innerHTML = position;
+	}
+</script>
+
 <html><head><title>Our Letter Game Project</title><body>
 <h2>Our Letter Game Project</h2>
 
@@ -34,6 +41,6 @@
 
 <p>Testing whether or not this shows up:</p>
 <button class="button button1">Test</button>
-<form><input type="text" id="typed" name="letter"><input type="button" value="Show Letter"></form>
-<p>You typed: <strong><span id="typed"></strong></p>
+<form>What position is the above letter in the alphabet? <input type="text" id="position"><input type="button" onclick="show()" value="Show Letter"></form>
+<p>You typed: <strong><span id="display"></strong></p>
 </body></html>
