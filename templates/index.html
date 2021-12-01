@@ -1,34 +1,15 @@
 <!doctype html>
 
-<style>
-.button {
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-
-.button1 {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #4CAF50;
-}
-</style>
+<style></style>
 
 <script type="text/JavaScript">
 	var alphaEng = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-	let position = 0;
+	let selected = 0;
 	function getRandomInt(max) {
 		return Math.floor(Math.random() * max);
 	}
-	position = getRandomInt(alphaEng.length - 1);
-	var letter = alphaEng[position];
+	selected = getRandomInt(alphaEng.length - 1);
+	var letter = alphaEng[selected];
 	function show(){
 		var position = document.getElementById("position").value;
 		display.innerHTML = position;
@@ -49,7 +30,6 @@
 
 <p>Your letter is: <strong><span id="letter"></strong></p>
 
-<button class="button button1">Test</button>
 <form>What position is the above letter in the alphabet? <input type="text" id="position"><input type="button" onclick="show()" value="Show Letter"></form>
 <p>You typed: <strong><span id="display"></strong></p>
 </body></html>
