@@ -9,7 +9,8 @@
 		return Math.floor(Math.random() * max);
 	}
 	selected = getRandomInt(alphaEng.length - 1);
-	var letter = alphaEng[selected];
+	var randomLetter = alphaEng[selected];
+	letter.innerHTML = randomLetter;
 	function show(){
 		var position = document.getElementById("position").value;
 		display.innerHTML = position;
